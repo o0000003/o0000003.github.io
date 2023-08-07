@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+ 
+
 </head>
  <!-- use float:right to move the arrow sign to the right in each button-->
 
@@ -17,8 +22,9 @@
        
      <div class="wrapper">
          
-         
+         <div class="logo-img">
          <img src="images/logo.png" alt="star">
+        </div>
         
   
          <nav>
@@ -34,20 +40,24 @@
              <li><a href="#contact-page">Contact</a></li>
              
          </ul>
-         
-             <input type="text" placeholder="Search">
-             <span class=" material-icons-outlined">search</span>
            
      </nav>
+     <div class="search-bar" >
+        <input type="text" placeholder="Search" class="search-input">
 
+        <button id="search-button" type="submit" class="material-icons-outlined">search</button>
+     
+    </div>
+   
      </div>
 
-    </header>
+ </header>
+
   <main>
-    <section>
-         <div class="main-container">
-             <img src="images/main-banner.jpg" alt="banner image">
-         <div class="content">
+    <section class="main-container">
+         <div class="wrapper">
+        
+         <div class="overlay">
              <h1>
               Welcome to Three Star Media
               </h1>
@@ -55,24 +65,25 @@
                   
                  
                   
-                  <a class="btn"><span class=" material-icons-outlined">arrow_right</span>Connect with us</a>
+                  <a class="btn">Connect with us<span  class=" material-icons-outlined">arrow_right</span></a>
                 
          </div>
 
-         </div>
+        </div>
 
     </section>
 
     <section id="about-us">
          <div class="wrapper-grid">
-         <div>
-             <img class="about-pic" src="images/about-us.jpg" alt="ping pong table">
+         <div class="pp-img">
+             <img src="images/about-us.jpg" alt="ping pong table">
          </div>
-       
+             <div class="about-page">
               <h2>About Us</h2>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore est facere tenetur rerum sapiente natus cum deserunt assumenda reprehenderit magnam optio aliquam similique accusantium, quasi, dicta error consequatur officia fugit.</p>
              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quas, veniam ipsum molestiae eaque, labore dolore voluptate modi reprehenderit quisquam natus totam repellendus cum veritatis laborum iste perspiciatis ex harum!</p>
           </div>
+         </div>
 
     </section>
 
@@ -80,54 +91,63 @@
          <div class="wrapper">
              <h2>Our Services</h2>
          <div class="services-grid">
-
+        <div class="first-block">
          <article>
-                 <img src="images/digital.jpg" alt="computure">
+                 <img class="computer" src="images/digital.jpg" alt="computure">
                  <h3>Digital Transformation</h3>
                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ipsum qui dicta temporibus tempore ad quos excepturi. Soluta provident perferendis beatae harum blanditiis voluptate possimus in iusto, quo qui sed.</p>
                  
-                 <a class="btn"><span class=" material-icons-outlined">arrow_right</span>Digital Plans</a>
+                 <a class="btn">Digital Plans<span class=" material-icons-outlined">arrow_right</span></a>
                 
          </article>
+        </div>
 
+         <div class="second">
          <article>
              <img src="images/marketing.jpg" alt="mkt">
              <h3>Marketing</h3>
              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ipsum qui dicta temporibus tempore ad quos excepturi. Soluta provident perferendis beatae harum blanditiis voluptate possimus in iusto, quo qui sed.</p>
              
-             <a class="btn"><span class=" material-icons-outlined">arrow_right</span>Marketing Plans</a>
+             <a class="btn">Marketing Plans<span class=" material-icons-outlined">arrow_right</span></a>
             
          </article>
-
+        </div>
+         
+        <div class="third">
          <article>
              <img src="images/video.jpg" alt="vid">
              <h3>Video Production</h3>
              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ipsum qui dicta temporibus tempore ad quos excepturi. Soluta provident perferendis beatae harum blanditiis voluptate possimus in iusto, quo qui sed.</p>
              
-             <a class="btn"><span class=" material-icons-outlined">arrow_right</span>Video Plans</a>
+             <a class="btn">Video Plans<span class=" material-icons-outlined">arrow_right</span></a>
              
 
          </article>
-
+        </div>
+         
+        <div class="fourth">
          <article>
              <img src="images/web.jpg" alt="website">
              <h3>Web Development</h3>
              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ipsum qui dicta temporibus tempore ad quos excepturi. Soluta provident perferendis beatae harum blanditiis voluptate possimus in iusto, quo qui sed.</p>
 
-             <a class="btn"><span class=" material-icons-outlined">arrow_right</span>Web Plans</a>
+             <a class="btn">Web Plans<span class=" material-icons-outlined">arrow_right</span></a>
             
 
          </article>
- 
+        </div>
+
+        <div class="fifth">
          <article>
              <img src="images/print.jpg" alt="printer">
              <h3>Print</h3>
              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ipsum qui dicta temporibus tempore ad quos excepturi. Soluta provident perferendis beatae harum blanditiis voluptate possimus in iusto, quo qui sed.</p>
   
-             <a class="btn"><span class=" material-icons-outlined">arrow_right</span>Print Plans</a>
+             <a class="btn">Print Plans<span class=" material-icons-outlined">arrow_right</span></a>
              
 
          </article> 
+        </div>
 
      </div>
      </div>
@@ -135,14 +155,14 @@
 
     <section >
          <div class="vision-container">
-             <img src="images/vision.jpg" alt="vs-img">
+             <!-- <img src="images/vision.jpg" alt="vs-img"> -->
          </div>
 
          <div class="image-text">
              <h3>Our Vision</h3>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia obcaecati iure optio explicabo odio nostrum consequuntur odit saepe dolores eaque error vitae neque pariatur, voluptatem cupiditate eum sit ex alias.</p>
              
-             <a class="btn-vision"><span class=" material-icons-outlined">arrow_right</span>Learn More</a>
+             <a class="btn-vision">Learn More<span class=" material-icons-outlined">arrow_right</span></a>
              
          </div>
 
@@ -152,35 +172,44 @@
          <div class="wrapper">
              <h2>Our Team</h2>
          <div class="pt-grid">
-
+        <div class="J">
          <div>
              <img class="pink-shirt" src="images/john.jpg" alt="john-doe">
          </div>
 
-         <div>
+         <div class="ab-John">
              <h3>John Doe </h3>
              <h5>CEO and Co-owner</h5>
+             <hr>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vero quis? In similique quas a perspiciatis vitae atque fugiat quo ab, hic veritatis perferendis repellat. Voluptates animi accusantium soluta delectus.</p>
          </div>
-        
+        </div>
+
+        <div class="B">
          <div>
-             <img src="images/bob.jpg" alt="bob-rite">
+             <img class="glasses" src="images/bob.jpg" alt="bob-rite">
          </div>
 
-         <div>
+         <div class="ab-Bob">
              <h3>Bob Rite</h3>
              <h5>CFO and Co-owner</h5>
+             <hr>
              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, atque exercitationem, maxime numquam eligendi, vitae enim deserunt praesentium sequi esse velit earum error obcaecati nisi ullam. Impedit vero voluptates soluta.</p>
          </div>
-
+        </div>
          </div>
          </div>
 
     </section>
 
+    <div class="wrapper">
+    <h2>Contact Us</h2>
     <section id="form">
-         <h2>Contact Us</h2>
-         <div  class="form-box">
+      
+           
+            <div class="info">
+         
+         
          <h3>Send us a message</h3>
              <!-- resize the input text box -->
              <label for="fname">Full Name </label>
@@ -192,46 +221,52 @@
              <label for="mess">Message</label>
              <input type="text" id="mess" name="mess"><br><br>
              
-             <a class="btn" href="#">Send</a>
+             <input type="submit" value="Send">
            
             
             
          </div>
-
-         <div>
+     
+        
+          <div class="hours">
 
          <h3>Hours of operation</h3>
           <!-- this grid is a table  -->
           <!-- use border-collapse to change to one line border -->
-            <table>
-                <tr>
-                  <th>Days</th>
-                  <th>Hours</th>
-                </tr>
-                <tr>
-                  <td>Monday - Fiday</td>
-                  <td>9 AM - 6 PM</td>
-                </tr>
-                <tr>
-                  <td>Saturday - Sunday</td>
-                  <td>Closed</td>
-                </tr>
-              </table>
          
+            <table>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday - Fiday</td>
+                        <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+            </table>
+        </div>
 
-         </div>
-
-         <div>
+        
+         
+        
+         
+            <div class="gg-map">
              <h3>Location</h3>
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944269826821!2d-75.7575006243883!3d45.34993724105624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690410939998!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
-
+             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944269826821!2d-75.7575006243883!3d45.34993724105624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690410939998!5m2!1sen!2sca" width="200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+       
     </section>
- 
+</div>
+
 </main>
 
-   <footer class="bg-black">
-     <div class="wrapper">
+ <footer class="bg-black">
+     <div class="orange-text">
      <small>&copy; Copyright Three Star Media,2020</small>
      <p><small>All images are taken from </small> <a href="#">Unsplash</a></p>
      </div>
