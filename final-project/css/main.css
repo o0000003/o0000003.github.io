@@ -1,4 +1,5 @@
 /* open sans font*/
+/* Colours values used in the layout #c78c06, #ffe6ac, #222 and white */
 
 *{
     box-sizing: border-box;
@@ -28,14 +29,14 @@ body{
 }
 
 header .wrapper{
-    background-color:#C68D00;
+    background-color:#c78c06;
     margin-top: 1rem;
   margin: 0 auto;
 }
 
 nav a{
     display: block;
-    color: #c68b06;
+    color: #c78c06;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -54,13 +55,13 @@ header nav ul li{
 
   li a{
     text-decoration: none;
-    color:#C68D00 ;
+    color:#c78c06 ;
    
    
   }
   nav a:hover{
     color: #222;
-    background-color:  #c68b06 ;
+    background-color:  #c78c06 ;
    
     padding: 1rem;
     
@@ -69,7 +70,7 @@ header nav ul li{
 nav a:active, 
 nav a:focus{
     color: #222;
-    background-color: #c68b06 ;
+    background-color: #c78c06 ;
    
 }
 
@@ -88,10 +89,10 @@ nav a:focus{
  }
 
  #search-button{
-    border: 1px solid  #c68b06;
+    border: 1px solid  #c78c06;
     padding: 1px 4px;
     background-color: #222;
-    color:  #c68b06;
+    color: #c78c06;
    
 }
 
@@ -118,7 +119,7 @@ nav a:focus{
 } 
 
 #about-us{
-    background-color: rgb(246, 227, 172);
+    background-color:#ffe6ac;
    width: 100%;
   
   padding-top: 0;
@@ -160,7 +161,7 @@ padding-top: 1.5rem;
 .third,
 .fourth,
 .fifth{
-    background-color:rgb(246, 227, 172);
+    background-color:#ffe6ac;
     width: auto;
     margin: 1rem;
     padding-bottom: 3rem;
@@ -202,12 +203,12 @@ img{
     background-color:#0c1b66;
     color:white;
     margin: 1rem;
-    border: solid 1px #c68b06;
+    border: solid 1px #c78c06;
 }
 
 .ab-John,
 .ab-Bob{
-    background-color: rgb(246, 227, 172);
+    background-color: #ffe6ac;
     padding: 1rem;
 }
 
@@ -218,7 +219,7 @@ img{
 }
 
 hr{
-    border: solid 1px  #c68b06 ;
+    border: solid 1px  #c78c06 ;
 }
 
 .B,
@@ -247,7 +248,7 @@ input[type="text"] {
   input[type=submit] {
     
     background-color:#222;
-    color:  #c68b06;
+    color:  #c78c06;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -263,7 +264,7 @@ input[type="text"] {
   }
 
   table th{
-    background-color: rgb(246, 227, 172);
+    background-color:#ffe6ac;
   }
 
   table {
@@ -289,20 +290,20 @@ input[type="text"] {
  .orange-text{
  margin: 2rem;
  padding-right: 1rem;
- color: #c68b06;
+ color: #c78c06;
  padding-top: 1rem;
  
  
  }
 
  .orange-text a{
-    color: #c68b06;
+    color:#c78c06;
   
  }
 
  .overlay a{
  padding: 2rem;
-  background-color:#c68b06;
+  background-color:#c78c06;
   color: #222;
 
  }
@@ -351,7 +352,7 @@ input[type="text"] {
         }
         
         nav a{
-            color: rgba(221, 151, 0, 0.926);
+            color: #c78c06;
             text-decoration: none;
            
             text-align: center;
@@ -361,14 +362,14 @@ input[type="text"] {
         
         nav a:hover{
             color: #333;
-            background-color:rgba(221, 151, 0, 0.926) ;
+            background-color:#c78c06 ;
             background-size: 10px;
         }
          
         nav a:active, 
         nav a:focus{
             color: #333;
-            background-color: rgba(221, 151, 0, 0.926);
+            background-color: #c78c06;
         }
         .search-bar{
             display: flex;
@@ -380,13 +381,15 @@ input[type="text"] {
         }
         
         #search-button{
-            border: 1px solid rgba(221, 151, 0, 0.926);
+            border: 1px solid #c78c06;
             padding: 2px 5px;
             background-color: #333;
-            color: rgba(221, 151, 0, 0.926);
+            color:#c78c06;
         }
 
-     
+        .image-text{
+            padding: 3rem;
+        }
 
        .pp-img{
         float: left;
